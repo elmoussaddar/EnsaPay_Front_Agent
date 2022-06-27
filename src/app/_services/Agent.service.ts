@@ -19,7 +19,7 @@ export class AgentService {
 	// tslint:disable-next-line: indent
 	constructor(private http: HttpClient) {
 		// tslint:disable-next-line: indent
-		this.agentUrl = 'http://localhost:8080/api/auth/';
+		this.agentUrl = 'https://ensapay-backend-springboot.herokuapp.com/api/auth/';
 	}
 
   public saveClient(
@@ -43,7 +43,7 @@ export class AgentService {
 
   public findAllClients(): Observable<Client[]> {
 		return this.http.get<Client[]>(
-		'http://localhost:8080/adminController/listClients'
+		'https://ensapay-backend-springboot.herokuapp.com/adminController/listClients'
 		);
 
 

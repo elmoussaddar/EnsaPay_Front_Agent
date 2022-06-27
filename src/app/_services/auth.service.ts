@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 
 
 
-const AUTH_API = 'http://localhost:8080/api/auth/';
+const AUTH_API = 'https://ensapay-backend-springboot.herokuapp.com/api/auth/';
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
 };
